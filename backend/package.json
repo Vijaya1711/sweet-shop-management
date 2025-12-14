@@ -1,0 +1,35 @@
+{
+    "name": "sweetshop-backend",
+    "version": "1.0.0",
+    "private": true,
+    "main": "dist/index.js",
+    "scripts": {
+        "start": "ts-node-dev --respawn --transpile-only src/index.ts",
+        "build": "tsc -p .",
+        "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
+    },
+    "dependencies": {
+        "bcrypt": "^5.1.0",
+        "class-transformer": "^0.5.1",
+        "class-validator": "^0.14.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.0",
+        "express": "^4.18.2",
+        "express-async-errors": "^3.1.1",
+        "express-validator": "^6.14.3",
+        "jsonwebtoken": "^9.0.0",
+        "pg": "^8.10.0",
+        "reflect-metadata": "^0.1.13",
+        "typeorm": "^0.3.16"
+    },
+    "devDependencies": {
+        "@types/bcrypt": "^5.0.0",
+        "@types/express": "^4.17.17",
+        "@types/jsonwebtoken": "^9.0.2",
+        "@types/node": "^20.1.0",
+        "ts-node": "^10.9.1",
+        "ts-node-dev": "^2.0.0",
+        "tsconfig-paths": "^4.2.0",
+        "typescript": "^5.9.3"
+    }
+}
